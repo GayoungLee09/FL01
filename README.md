@@ -49,7 +49,7 @@ cos(\theta_n+\theta_1) & \cdots & cos(\theta_n+\theta_n)
 
  따라서 GAF는 타임스탬프가 증가함에 따라 시간 상관의 형태로 로컬 시간 관계를 보존할 수 있는 표현을 제공합니다. 실험에서는 극좌표로 변환한 후 좌표의 1초(128개의 값)를 하나의 이미지로 변환하였습니다. Time window의 길이는 1초이며, 이 이미지 데이터는 모델 학습 과정에 사용하였습니다.
  
-<img width="70%" src = "https://github.com/GayoungLee09/FL01/assets/81952512/b08b6355-7e24-4696-be2c-a99c23feed09" />
+<img width="55%" src = "https://github.com/GayoungLee09/FL01/assets/81952512/b08b6355-7e24-4696-be2c-a99c23feed09" />
 
 (데이터 유형 변환 과정)
 <br/>
@@ -62,7 +62,7 @@ cos(\theta_n+\theta_1) & \cdots & cos(\theta_n+\theta_n)
 
 $$\tag{4} f(w) = \sum_{k=1}^{K}\frac{n_k}{n}F_k(w)\ where\ F_k(w) = \frac{1}{n_k}\sum_{i \in P_k}f_i(w)$$
 
-<img width="70%" src = "https://github.com/GayoungLee09/FL01/assets/81952512/5e133f1a-c3ef-46fb-ad8b-521d260bc15e" />
+<img width="55%" src = "https://github.com/GayoungLee09/FL01/assets/81952512/5e133f1a-c3ef-46fb-ad8b-521d260bc15e" />
 
 (Federated Learning의 구조)
 <br/>
