@@ -30,12 +30,18 @@
  $$\small\tag{1}\tilde{x_i} = \frac {(x_i - max(X)) + (x_i - min(X))}{max(X) - min(X)}$$
  
  정규화 된 센서 값들은 수식(2)를 사용하여 극 좌표$(θ,r)$로 변환합니다.
+
  
  $$\tag{2}\small g(\tilde{x_i},t_i) = \{\theta_i,r_i\} \ where\begin{cases} \theta_i = arccos(\tilde{x_i}),\ \tilde{x_i} \in\tilde{X} \\ r_i = t_i \end{cases}$$
+
  
  정규화 된 시계열 센서 데이터를 극좌표로 인코딩하면 점 사이의 삼각합을 고려하여 시간 간격 사이의 상관 계수를 쉽게 추출할 수 있습니다. 시간 상관 관계는 Pearson의 상관 계수 기하학적 해석을 기반으로 역 코사인 각도에서 추출할 수 있습니다. 상관 계수는 벡터 사이 각도의 코사인과 동일합니다. 마지막으로 타임스탬프 와 사이의 상관관계는 $cos(θ_i,θ_j)$를 사용하여 계산되고, GAF는 수식(3)을 사용하여 G로 정의됩니다.
+
+
  
  $$\tag{3}\small G = \begin{bmatrix} cos(\theta_1+\theta_1)&\cdots&cos(\theta_1+\theta_n)\\\vdots&\ddots&\vdots\\cos(\theta_n+\theta_1)&\cdots&cos(\theta_n+\theta_n)\end{bmatrix}$$
+
+
  
  따라서 GAF는 타임스탬프가 증가함에 따라 시간 상관의 형태로 로컬 시간 관계를 보존할 수 있는 표현을 제공합니다. 실험에서는 극좌표로 변환한 후 좌표의 1초(128개의 값)를 하나의 이미지로 변환하였습니다. Time window의 길이는 1초이며, 이 이미지 데이터는 모델 학습 과정에 사용하였습니다.
  
@@ -53,6 +59,7 @@
 $$\tag{4}\small f(w) = \sum_{k=1}^{K}\frac{n_k}{n}F_k(w)\ where\ F_k(w) = \frac{1}{n_k}\sum_{i \in P_k}f_i(w)$$
 <br/>
 <img width="60" src = "https://github.com/GayoungLee09/FL01/assets/81952512/5e133f1a-c3ef-46fb-ad8b-521d260bc15e" />
+
 (연합학습(Federated Learning)의 구조)
 <br/>
 <br/>
