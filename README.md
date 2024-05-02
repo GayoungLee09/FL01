@@ -57,8 +57,8 @@
  수식(4)를 사용하여 모든 클라이언트가 보유한 전체 훈련 데이터에 대한 클라이언트의 로컬 훈련 데이터 비율을 계산하여 스케일링 인수를 얻을 수 있습니다. 계산된 배율 인수의 값을 기반으로 각 로컬 모델의 가중치를 배율 조정하여 각 구성 요소에 대해 매개변수 평균화를 수행하였습니다.
 
 $$\tag{4}\small f(w) = \sum_{k=1}^{K}\frac{n_k}{n}F_k(w)\ where\ F_k(w) = \frac{1}{n_k}\sum_{i \in P_k}f_i(w)$$
-
-<img width="60" src = "https://github.com/GayoungLee09/FL01/assets/81952512/5e133f1a-c3ef-46fb-ad8b-521d260bc15e" />
+<br/>
+<img width="70%" src = "https://github.com/GayoungLee09/FL01/assets/81952512/5e133f1a-c3ef-46fb-ad8b-521d260bc15e" />
 
 (Federated Learning의 구조)
 <br/>
