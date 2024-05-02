@@ -62,6 +62,11 @@
 ### 2) 실험 결과
  Deep Learning방법에서 인식 모델로 사용한 CNN의 구조는 Input - Convolution - Pooling - Convolution - Pooling - Dense - Dense - Dense - Output으로, 2개의 Convolution Layer와 2개의 Pooling Layer, 3개의 Fully Connected Layer로 이루어집니다. 
  Comparison Model과 제안하는 방법에서 인식 모델로 사용한 CNN의 구조는 Input - Convolution - Pooling - Convolution - Pooling - Convolution - Pooling - Flatten – Fully Connected – Fully Connected - Output으로, 3개의 Convolution Layer와 3개의 Pooling Layer, 2개의 Fully Connected Layer, 1개의 Flatten Layer로 이루어집니다.
+|Method|Accuracy|Setting|
+|:---:|:---:|:---:|
+|Deep Learning|81.57|Non-Federated Setting|
+|Comparison Model|71.44|Federated Setting|
+|<span style="color:red">Proposed Method</span>|<span style="color:red"76.47</span>|<span style="color:red">Federated Setting</span>|
  성능 검증을 실시한 결과는 Federated 환경에서의 학습으로 인해 일반적인 딥러닝 방식(81.57%)보다 정확도가 낮았습니다. 하지만, 제안하는 방법은 연합 학습을 사용하여 분산 환경에서 프라이버시 문제를 처리할 수 있어 개인정보 보호가 가능합니다. 제안하는 방법은 센서 데이터를 이미지 데이터로 변환한 후 이미지 데이터의 특징 추출 및 학습에 강력한 CNN 모델을 사용하여, Comparison Model(71.44%)을 사용한 방법보다 나은 76.47%의 인식률을 달성해 유의미한 결과를 도출하였습니다.
 <br/>
 <br/>
