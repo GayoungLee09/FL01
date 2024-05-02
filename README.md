@@ -32,7 +32,7 @@
  정규화 된 센서 값들은 수식(2)를 사용하여 극 좌표$(θ,r)$로 변환합니다.
    
 $$
-g(\tilde{x}_i, t_i) = \begin{Bmatrix}\theta_i, r_i\end{Bmatrix} \quad \text{where}
+\tag{2}\small g(\tilde{x}_i, t_i) = \begin{Bmatrix}\theta_i, r_i\end{Bmatrix} \quad \text{where}
 \begin{cases} 
 \theta_i = \arccos(\tilde{x}_i), & \tilde{x}_i \in \tilde{X} \\ 
 r_i = t_i 
