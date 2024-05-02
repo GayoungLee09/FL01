@@ -39,7 +39,7 @@
 
 
  $$\tag{3}\small G = \begin{bmatrix}
-cos(\theta_1+\theta_1) & \cdots & cdots&cos(\theta_1+\theta_n) \\
+cos(\theta_1+\theta_1) & \cdots & cos(\theta_1+\theta_n) \\
 \vdots & \ddots & \vdots \\
 cos(\theta_n+\theta_1) & \cdots & cos(\theta_n+\theta_n)
 \end{bmatrix}$$
