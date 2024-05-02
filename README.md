@@ -31,7 +31,7 @@
  
  정규화 된 센서 값들은 수식(2)를 사용하여 극 좌표$(θ,r)$로 변환합니다.
  
- $$\tag{2}\small g(\tilde{x_i},t_i) = \{\theta_i,r_i\} \ where
+ $$\tag{2}\small g(\tilde{x_i},t_i) = 	\left\{\theta_i,r_i\right\} where
  \begin{cases} 
  \theta_i = arccos(\tilde{x_i}), & \tilde{x_i} \in\tilde{X} \\ 
  r_i = t_i 
