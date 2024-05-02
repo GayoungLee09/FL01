@@ -58,9 +58,10 @@
 
 $$\tag{4}\small f(w) = \sum_{k=1}^{K}\frac{n_k}{n}F_k(w)\ where\ F_k(w) = \frac{1}{n_k}\sum_{i \in P_k}f_i(w)$$
 <br/>
+
 <img width="60" src = "https://github.com/GayoungLee09/FL01/assets/81952512/5e133f1a-c3ef-46fb-ad8b-521d260bc15e" />
 
-(연합학습(Federated Learning)의 구조)
+(Federated Learning의 구조)
 <br/>
 <br/>
 
