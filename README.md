@@ -27,7 +27,7 @@
 
  먼저 원시의 센서 데이터는 수식(1)을 이용하여 [-1, 1] 사이의 값으로 정규화 합니다.
  
- $$\small\tag{1}\tilde{x_i} = \frac {(x_i - max(X)) + (x_i - min(X))}{max(X) - min(X)}$$
+ $$\tag{1}\tilde{x_i} = \frac {(x_i - max(X)) + (x_i - min(X))}{max(X) - min(X)}$$
  
  정규화 된 센서 값들은 수식(2)를 사용하여 극 좌표$(θ,r)$로 변환합니다.
    
