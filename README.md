@@ -65,10 +65,10 @@ cos(\theta_n+\theta_1) & \cdots & cos(\theta_n+\theta_n)
 $$\tag{4} f(w) = \sum_{k=1}^{K}\frac{n_k}{n}F_k(w)\ where\ F_k(w) = \frac{1}{n_k}\sum_{i \in P_k}f_i(w)$$
 <p align="center"> 
 <img width="55%" src = "https://github.com/GayoungLee09/FL01/assets/81952512/5e133f1a-c3ef-46fb-ad8b-521d260bc15e" />
-</p
+
 <p align="center">
 (Federated Learning의 구조)
-<\p>
+
 <br/>
 <br/>
 
