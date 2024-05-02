@@ -11,6 +11,7 @@
 ## 2. 사용한 기술 및 방법 설명
 
 ### 1) 전체 프로세스
+<img width="50%" src="https://github.com/GayoungLee09/FL01/assets/81952512/58ab588f-5f74-49d6-8469-b6676a879a8f"/>
 
 (제안하는 프레임워크의 전반적인 과정)
 <br/> 
