@@ -32,7 +32,7 @@
  정규화 된 센서 값들은 수식(2)를 사용하여 극 좌표$(θ,r)$로 변환합니다.
    
 $$
-\tag{2}\small g(\tilde{x}_i, t_i) = \begin{Bmatrix}\theta_i, r_i\end{Bmatrix} \quad \text{where}
+\tag{2} g(\tilde{x}_i, t_i) = \begin{Bmatrix}\theta_i, r_i\end{Bmatrix} \quad \text{where}
 \begin{cases} 
 \theta_i = \arccos(\tilde{x}_i), & \tilde{x}_i \in \tilde{X} \\ 
 r_i = t_i 
@@ -41,7 +41,7 @@ $$
  
  정규화 된 시계열 센서 데이터를 극좌표로 인코딩하면 점 사이의 삼각합을 고려하여 시간 간격 사이의 상관 계수를 쉽게 추출할 수 있습니다. 시간 상관 관계는 Pearson의 상관 계수 기하학적 해석을 기반으로 역 코사인 각도에서 추출할 수 있습니다. 상관 계수는 벡터 사이 각도의 코사인과 동일합니다. 마지막으로 타임스탬프 와 사이의 상관관계는 $cos(θ_i,θ_j)$를 사용하여 계산되고, GAF는 수식(3)을 사용하여 G로 정의됩니다.
 
- $$\tag{3}\small G = \begin{bmatrix}
+ $$\tag{3} G = \begin{bmatrix}
 cos(\theta_1+\theta_1) & \cdots & cos(\theta_1+\theta_n) \\
 \vdots & \ddots & \vdots \\
 cos(\theta_n+\theta_1) & \cdots & cos(\theta_n+\theta_n)
@@ -60,7 +60,7 @@ cos(\theta_n+\theta_1) & \cdots & cos(\theta_n+\theta_n)
  이러한 연합 학습의 구조는 개인 데이터를 서로 공유하지 않고 학습이 가능해 사용자 데이터 간의 프라이버시를 보장할 수 있다는 장점이 있습니다. 따라서 개인 프라이버시의 문제가 있는 개인의 활동, 앱 사용 데이터, 자동차의 주행 정보, 개인의 병원 진료 기록 등의 데이터가 사용될 때 연합학습의 사용이 용이합니다. 
  수식(4)를 사용하여 모든 클라이언트가 보유한 전체 훈련 데이터에 대한 클라이언트의 로컬 훈련 데이터 비율을 계산하여 스케일링 인수를 얻을 수 있습니다. 계산된 배율 인수의 값을 기반으로 각 로컬 모델의 가중치를 배율 조정하여 각 구성 요소에 대해 매개변수 평균화를 수행하였습니다.
 
-$$\tag{4}\small f(w) = \sum_{k=1}^{K}\frac{n_k}{n}F_k(w)\ where\ F_k(w) = \frac{1}{n_k}\sum_{i \in P_k}f_i(w)$$
+$$\tag{4} f(w) = \sum_{k=1}^{K}\frac{n_k}{n}F_k(w)\ where\ F_k(w) = \frac{1}{n_k}\sum_{i \in P_k}f_i(w)$$
 
 <img width="70%" src = "https://github.com/GayoungLee09/FL01/assets/81952512/5e133f1a-c3ef-46fb-ad8b-521d260bc15e" />
 
